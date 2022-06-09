@@ -1,4 +1,4 @@
-FROM php:8.0.11-apache-bullseye
+FROM php:8.1.6-apache-bullseye
 
 MAINTAINER Juri Hahn <juri@hahn21.de>
 
