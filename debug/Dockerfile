@@ -15,7 +15,7 @@ RUN docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg --with-w
 RUN docker-php-ext-install -j$(nproc) gd exif mysqli bz2 zip opcache
 
 
-RUN pecl install xdebug-3.0.4
+RUN pecl install xdebug-3.1.6
 RUN docker-php-ext-enable xdebug
 RUN echo "xdebug.mode=develop,debug" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 RUN echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
