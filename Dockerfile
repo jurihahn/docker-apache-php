@@ -1,4 +1,4 @@
-FROM php:8.1.29-apache-bullseye
+FROM php:8.3.10-apache-bookworm
 
 MAINTAINER Juri Hahn <juri@hahn21.de>
 
