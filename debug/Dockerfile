@@ -1,4 +1,4 @@
-FROM php:8.1.29-apache-bullseye
+FROM php:8.3.10-apache-bookworm
 
 MAINTAINER Juri Hahn <juri@hahn21.de>
 
@@ -15,10 +15,11 @@ RUN docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg --with-w
 RUN docker-php-ext-install -j$(nproc) gd exif mysqli bz2 zip opcache
 
 
-RUN pecl install xdebug-3.1.6
+RUN pecl install xdebug-3.3.2
 RUN docker-php-ext-enable xdebug
 RUN echo "xdebug.mode=develop,debug" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 RUN echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+RUN echo "xdebug.client_port=9003" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 RUN echo "xdebug.start_with_request=yes" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 
