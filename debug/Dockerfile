@@ -31,3 +31,5 @@ RUN a2enmod expires
 RUN a2enmod ssl
 
 RUN a2ensite default-ssl
+
+EXPOSE 9003
