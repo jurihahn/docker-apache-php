@@ -1,4 +1,4 @@
-FROM php:8.3.12-apache-bookworm
+FROM php:8.3.14-apache-bookworm
 
 MAINTAINER Juri Hahn <juri@hahn21.de>
 
