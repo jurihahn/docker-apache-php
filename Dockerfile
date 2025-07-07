@@ -1,4 +1,4 @@
-FROM php:8.4.5-apache-bullseye
+FROM php:8.4.10-apache-bookworm
 
 LABEL maintainer="Juri Hahn <juri@hahn21.de>"
 
