@@ -1,4 +1,4 @@
-FROM php:8.3.29-apache
+FROM php:8.3.31-apache
 
 MAINTAINER Juri Hahn <juri@hahn21.de>
 
