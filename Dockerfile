@@ -1,4 +1,4 @@
-FROM php:8.4.24-apache
+FROM php:8.4.26-apache
 
 LABEL maintainer="Juri Hahn <juri@hahn21.de>"
 
